@@ -24,7 +24,7 @@ def el_gamal_encipher(msg, k, k_pub):
 def el_gamal_decipher(ciphertext, p, k_priv):
     c1 = ciphertext[0]
     c2 = ciphertext[1]
-    # STUB (Doesnt work yet)
+
     return c2 * (c1 ** ((p-1) - k_priv)) % p
 
 def plaintext_numbers(string):
